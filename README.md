@@ -1,2 +1,1 @@
-# solderbit-segment
-
+# solder:bit Segment
