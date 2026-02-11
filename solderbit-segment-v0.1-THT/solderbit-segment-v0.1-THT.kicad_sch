@@ -2986,6 +2986,16 @@
 		)
 		(uuid "98fba4c4-0df4-4549-918d-8aaf44fe28ae")
 	)
+	(label "SDA"
+		(at 209.55 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "abc9b0b9-6721-4a5e-a687-6553aea0b4a5")
+	)
 	(label "P2"
 		(at 137.16 85.09 180)
 		(effects
@@ -3026,26 +3036,6 @@
 		)
 		(uuid "ca1639fa-02dc-415c-a037-b9e35fccd122")
 	)
-	(label "~{INT}"
-		(at 209.55 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cbcb87fb-5b02-4da7-9f36-e034c51147e7")
-	)
-	(label "SDA"
-		(at 209.55 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e0ee181c-13c3-4ab4-a4b0-9331c7d5edcc")
-	)
 	(label "P3"
 		(at 137.16 87.63 180)
 		(effects
@@ -3085,6 +3075,16 @@
 			(justify right bottom)
 		)
 		(uuid "f1734788-15a4-4646-82d4-055213f90fe1")
+	)
+	(label "~{INT}"
+		(at 209.55 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd6be296-9335-474a-9524-a91fd8353e20")
 	)
 	(symbol
 		(lib_id "power:VDD")
@@ -4092,8 +4092,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "94da4c80-1993-47f0-89c9-89ac8ab9e9c3")
 		(property "Reference" "U1"
 			(at 126.492 69.088 0)
@@ -4140,7 +4140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SO-16"
+		(property "Package" "SOIC-16"
 			(at 130.81 74.168 0)
 			(effects
 				(font

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SolderbitSegment")(type "KiCad")(uri "${KIPRJMOD}/library/SolderbitSegment.kicad_sym")(options "")(descr ""))
+)
