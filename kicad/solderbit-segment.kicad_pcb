@@ -2391,6 +2391,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/library/SolderbitSegment.3dshapes/PCF8574AT_3,518.stp"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3157,7 +3158,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-16_W7.62mm.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
