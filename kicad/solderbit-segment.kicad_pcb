@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "solder:bit Segment")
-		(date "2026-02-11")
+		(date "2026-02-16")
 		(rev "v0.1")
 		(company "Devices Lab")
 		(comment 1 "Lancaster University")
@@ -43,11 +43,55 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+				(color "White")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(color "FR4 natural")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+				(color "White")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
-		(aux_axis_origin 140 86)
-		(grid_origin 140 86)
+		(aux_axis_origin 140 82)
+		(grid_origin 140 82)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_5555555f_575555ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -119,7 +163,7 @@
 		(property "Reference" "R5"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "72e7d58c-4864-4afa-a8a2-49dbeb2b3f32")
+			(uuid "0e8967d1-c9f9-4526-b2b7-84637d062962")
 			(effects
 				(font
 					(size 1 1)
@@ -127,11 +171,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eeee5b01-6aaa-418b-b4e1-74de99a8c143")
+			(uuid "13b203cd-5744-4542-ab95-aaff2e43f3ad")
 			(effects
 				(font
 					(size 1 1)
@@ -139,11 +183,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3cccadb1-fcb5-48c5-9e43-a83912fe8b64")
+			(uuid "2443a7b0-cc1b-4b7c-8d63-a11ae7e116d5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -155,10 +199,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e93a241-e15e-4f59-acf6-8ff39be4768f")
+			(uuid "c62ea7d8-8b54-4942-ae91-28e42389a690")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2641970c-f6fe-45b0-8c72-a9e82f88adfb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e435f0b-b830-4339-a040-c4c98f315e64")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -299,7 +369,7 @@
 		(property "Reference" "R2"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "a22c6eb5-0c9d-49e3-b691-dcc8b942ca8b")
+			(uuid "7a518774-00b4-4868-99c6-f10848893283")
 			(effects
 				(font
 					(size 1 1)
@@ -307,11 +377,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7ed7a41c-b77c-4539-a7b7-81ac1a022d43")
+			(uuid "ab2b8397-cbe8-4365-8863-3c74de92604c")
 			(effects
 				(font
 					(size 1 1)
@@ -319,11 +389,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2e0f1100-b49c-4d5d-9631-75c594802e4a")
+			(uuid "18f41f7b-40c4-4a60-beee-604cef0acb45")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -335,10 +405,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "14d83ba3-88c2-48e1-ac0a-2254326830a1")
+			(uuid "643e5ad1-8dc5-481a-aa97-0b7623fcb77a")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4283ceb8-27a9-44c8-a698-7bdb1871ceb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "294215f9-d7a9-446b-81cf-3b721b8ff9aa")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -479,7 +575,7 @@
 		(property "Reference" "R6"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "1246762e-d4c4-4e32-bd57-faf3140cf755")
+			(uuid "92979b9b-a014-4dfa-b35c-9ced11b753f2")
 			(effects
 				(font
 					(size 1 1)
@@ -487,11 +583,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0fc1951c-1aef-4f2f-8338-8d35c85d337a")
+			(uuid "f03d3c2e-4f10-4833-9b15-2a6a7e2e1024")
 			(effects
 				(font
 					(size 1 1)
@@ -499,11 +595,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "90148243-f5bd-4901-8d39-2f3caee6d5e0")
+			(uuid "f2ea027b-5a79-4c97-8477-6e199768bf22")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -515,10 +611,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4b995bf7-aceb-46e2-a125-34b3746c72d9")
+			(uuid "1f187538-5dae-4247-8855-74dc250137a9")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3f7de1a-067f-4d35-a6d2-edf8ed4b4cd5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb7e003d-def2-41f9-b1cf-a66f3868b46c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -659,7 +781,7 @@
 		(property "Reference" "R1"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "3b39929e-c861-41ef-92df-e35bf7223a63")
+			(uuid "16326b49-9db9-4f8f-8789-b941bd1acb7b")
 			(effects
 				(font
 					(size 1 1)
@@ -667,11 +789,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb7036f6-ab81-48eb-8357-f0d5fada9f82")
+			(uuid "cdcfeb36-b6f3-4142-b5a3-3d5a15cd4ff2")
 			(effects
 				(font
 					(size 1 1)
@@ -679,11 +801,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7e4aa637-ab80-4ee0-9f6a-ba27bf2f1b71")
+			(uuid "d42301e0-689a-419c-9eaa-234694940d50")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -695,10 +817,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "20c7b0ac-25e3-4bb9-94fc-841f6902dadc")
+			(uuid "0a1998f5-2ecd-4659-83c3-059f74dc4204")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af3be457-3b92-4a7b-8bcc-ab29d3d567ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "321b3529-b294-4900-b3c6-9fa870037ed5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -838,7 +986,7 @@
 			(at 0.5 -2.25 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "a1bb88d9-bfc8-45e2-9d89-1ee20447edc3")
+			(uuid "32d382fb-581c-4cb4-a895-db1c3331864e")
 			(effects
 				(font
 					(size 1 1)
@@ -846,12 +994,12 @@
 				)
 			)
 		)
-		(property "Value" "ADMR10A0"
+		(property "Value" "ADMO10A0"
 			(at 0 -16.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "171d1bd1-6812-4220-a1e8-4acfe2856b0e")
+			(uuid "bb570e04-7ea0-4f54-a41a-c57364eb0ec8")
 			(effects
 				(font
 					(size 1 1)
@@ -864,7 +1012,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f39b9f7-9779-4379-8380-5a32ad019b65")
+			(uuid "bfdf3027-9058-4a9f-8abf-02a44833403e")
 			(effects
 				(font
 					(size 1 1)
@@ -877,7 +1025,33 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "79a41cf4-8162-4ad2-b4aa-8b83cc02e0ae")
+			(uuid "7af527e2-2cff-4228-85d4-1d957b85c3b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "10mm,SMD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b0bacbc-664e-4a54-aca5-1d52f2d05201")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "2682705"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "456766a3-6b2a-4814-afe8-97954c501af8")
 			(effects
 				(font
 					(size 1 1)
@@ -1339,7 +1513,7 @@
 		(property "Reference" "R3"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "bccb4b20-2f97-4f4a-af50-9f50ebf75d3a")
+			(uuid "37d32324-0905-4e59-9a8d-4c6b919f7bfd")
 			(effects
 				(font
 					(size 1 1)
@@ -1347,11 +1521,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c44d8413-1e13-4054-9f76-737e0cfeaf7c")
+			(uuid "d3d7a67c-8529-4073-900e-abf98aebbdee")
 			(effects
 				(font
 					(size 1 1)
@@ -1359,11 +1533,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "843d5fc1-ecf7-4d64-a565-b5103c21b609")
+			(uuid "9f029834-e3e0-4e25-8d6f-5dbe99ddefdb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1375,10 +1549,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8a3bedd4-1d35-47e6-8cea-37da9f7b8010")
+			(uuid "b181b5f7-29ce-4d32-a0b0-7269b327d057")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "501d6f09-e191-4bd2-9c0a-b234b148932d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b572a3e-49b4-42a6-8d3c-e66823d094e6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1519,7 +1719,7 @@
 		(property "Reference" "C1"
 			(at 0 0 90)
 			(layer "F.SilkS")
-			(uuid "51d50655-7024-490f-a67a-47d184ec6174")
+			(uuid "2fb0c89d-8076-4e13-9cff-79f0fea99e40")
 			(effects
 				(font
 					(size 1 1)
@@ -1531,7 +1731,7 @@
 			(at 0 1.85 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6b242988-37db-4c07-b1dd-273b374d44f4")
+			(uuid "e90c6c20-30da-41ca-ba6b-869772a7a57d")
 			(effects
 				(font
 					(size 1 1)
@@ -1539,11 +1739,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc5505af-33c4-4c5a-b805-9c32f7b79f7a")
+			(uuid "2338c978-44d9-4ec0-a640-0065801fba35")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1555,10 +1755,36 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b2002cdf-1d20-433c-9523-f272d708ac2d")
+			(uuid "e059460f-95b5-4d99-87df-5b1f116814ef")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5804d83-0738-4e47-9785-f00477a9cef8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "3188966"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51ac3f20-65ad-433a-9e14-ed8e0a8f322d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1759,7 +1985,7 @@
 		(property "Reference" "R7"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "be3b2a34-e6b9-4fea-ab26-27e0e2b353b2")
+			(uuid "92158b15-1a37-4aa7-9e90-6100e0a8354d")
 			(effects
 				(font
 					(size 1 1)
@@ -1767,11 +1993,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a671d6a-3e8d-4ce3-906a-679eca877352")
+			(uuid "cacf815b-87d1-479e-ac7b-929be2d10769")
 			(effects
 				(font
 					(size 1 1)
@@ -1779,11 +2005,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dfb52a0f-3bad-42e7-abb9-82bb127844bf")
+			(uuid "349d04fe-8786-4e8b-8113-537c5b6f9e51")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1795,10 +2021,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c03da739-3db6-4c24-99d0-411808a7c2d6")
+			(uuid "867c6d0a-1540-476f-ac21-cd87b56b85d4")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26fd37a9-56ee-416c-815c-6b67f362b42d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e67e5b58-cfeb-4a72-b2de-0501e0442592")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1939,7 +2191,7 @@
 		(property "Reference" "U1"
 			(at 1.7 0 180)
 			(layer "F.SilkS")
-			(uuid "e511bc33-4b7a-413a-9acc-56a4859e3b65")
+			(uuid "e590221a-0432-49b6-babb-2f23f3fb7c01")
 			(effects
 				(font
 					(size 1 1)
@@ -1951,7 +2203,7 @@
 			(at 0 6.05 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bcac952f-0889-4acb-9765-f73e18db7cac")
+			(uuid "8349dff1-47f7-48a7-b22c-8711bc51da75")
 			(effects
 				(font
 					(size 1 1)
@@ -1963,7 +2215,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f65fa30b-dc7a-4ed0-bd93-08a749cfa58f")
+			(uuid "0c1a17d4-3c6d-4e61-a16d-bb3997a84036")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1975,7 +2227,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8fe3e500-2102-4c1b-ba34-ca0f6043fb8d")
+			(uuid "20bf760e-baa3-4e41-a9b4-72613c7eb256")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1983,7 +2235,7 @@
 				)
 			)
 		)
-		(property "Package" "SOIC-16"
+		(property "Package" "SO-16"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2009,11 +2261,24 @@
 				)
 			)
 		)
+		(property "Onecall order code" "2776146"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8500b438-1de8-4a75-a85b-8360ad56dea8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOIC*7.5x10.3mm*P1.27mm*")
 		(path "/94da4c80-1993-47f0-89c9-89ac8ab9e9c3")
 		(sheetname "/")
 		(sheetfile "solderbit-segment.kicad_sch")
-		(attr smd)
+		(attr smd allow_missing_courtyard dnp)
 		(fp_line
 			(start 3.1 -5.21)
 			(end 3.1 -5.005)
@@ -2412,7 +2677,7 @@
 		(property "Reference" "R4"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "93a13cd8-6951-4bd2-b645-08d325850961")
+			(uuid "c82e7adf-ed42-4baa-a0dc-a4229a515922")
 			(effects
 				(font
 					(size 1 1)
@@ -2420,11 +2685,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e754244e-9d2b-47fc-b991-aefddcaa049e")
+			(uuid "2e478ed7-442e-4117-a4fd-43823759d27a")
 			(effects
 				(font
 					(size 1 1)
@@ -2432,11 +2697,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1428e730-ff33-44ea-a483-ec83d3fd4038")
+			(uuid "f6da67b4-b615-48a2-817a-4c5c3b02e6ba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2448,10 +2713,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "645798ae-eb22-479b-973c-983849500238")
+			(uuid "dd7956b2-9da5-496c-8b34-1f3f0fe00676")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43ebe121-8eed-4e05-a9bd-0e1f0c00f19d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf101a73-bad8-46cb-a7d9-1c85992c00ca")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2592,7 +2883,7 @@
 		(property "Reference" "R8"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b5f52f89-0f30-4702-aaff-24229c2ec3ed")
+			(uuid "5c3a1825-08b5-4062-aa21-9919dd80577b")
 			(effects
 				(font
 					(size 1 1)
@@ -2600,11 +2891,11 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "150R"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "439a0608-d80c-4a34-90df-cb7911c7018b")
+			(uuid "d45e7f93-aa56-486b-b630-620e75f72603")
 			(effects
 				(font
 					(size 1 1)
@@ -2612,11 +2903,11 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "291ac37a-eea4-4b0b-805e-684ea188b868")
+			(uuid "67298f85-9ef7-49e6-aeae-4392e3207354")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2628,10 +2919,36 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dc9bc090-9287-4593-8927-86db0d11025d")
+			(uuid "f2a06e91-e0db-43f3-9f03-4b9dbab62a19")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f79bb92-6811-4008-b6f7-cc8e07f3f4e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Onecall order code" "9240420RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "242e77be-5426-41ce-80fa-cf64e5e817f9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2772,7 +3089,7 @@
 		(property "Reference" "U2"
 			(at 3.81 16.39 180)
 			(layer "F.SilkS")
-			(uuid "1be896ed-a45c-45ba-9508-9bd6b9261050")
+			(uuid "48ebbb54-8573-43b7-9bc7-618d78aa15ad")
 			(effects
 				(font
 					(size 1 1)
@@ -2783,7 +3100,7 @@
 		(property "Value" "PCF8574N"
 			(at 3.81 20.11 90)
 			(layer "F.Fab")
-			(uuid "f2f88788-3bf4-4acc-a935-77bf3cc6fd30")
+			(uuid "3b55442a-30a3-4f5e-916a-9af98b124847")
 			(effects
 				(font
 					(size 1 1)
@@ -2795,7 +3112,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "51016c2c-734f-4998-93db-da007f473ece")
+			(uuid "865cd8d1-cceb-4e6d-89a7-a791b0855666")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2807,7 +3124,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0479b30b-fe60-40dd-89df-d538c81f8fe4")
+			(uuid "6083b5ee-01ca-403d-abfc-da5b4f7cb742")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2841,11 +3158,24 @@
 				)
 			)
 		)
+		(property "Onecall order code" "3124747"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa24b467-1654-432c-aa56-13f05ff7ca27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/adc40a97-1c5f-4504-9dab-b4f0471bb07b")
 		(sheetname "/")
 		(sheetfile "solderbit-segment.kicad_sch")
-		(attr through_hole)
+		(attr through_hole allow_missing_courtyard)
 		(fp_line
 			(start 6.06 -1.33)
 			(end 4.81 -1.33)
@@ -3931,7 +4261,7 @@
 			(at 0 2.92 0)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "7d622d93-15d2-4de4-ac97-1569ed28ec81")
+			(uuid "bafa6fdf-b7a1-4aae-9fa4-f38df5cd5ecd")
 			(effects
 				(font
 					(size 1 1)
@@ -3944,7 +4274,7 @@
 			(at 3 -5.08 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d5b1493b-736c-4173-878a-78a15480e278")
+			(uuid "cb5c20e6-4831-4cb3-b452-e9864174ed4b")
 			(effects
 				(font
 					(size 1 1)
@@ -3957,7 +4287,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "35738bab-c31b-42ae-9019-1e44f0992895")
+			(uuid "44a7c30c-b26f-494b-9968-7aad2508b605")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3970,7 +4300,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "77eab803-a9bf-4f14-b1d8-054a7c98d03c")
+			(uuid "4a4bf493-6242-4b23-9798-b7728277960f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,6 +4315,34 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "c667e316-5f10-41f3-b0db-d3e289ca240f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Package" "2.54mm,THT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "04db1f77-b93f-4da8-94a6-1dae051ba356")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Onecall order code" "CN14490"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ef4fcde2-d84d-429b-ab67-cb6d7a725f25")
 			(effects
 				(font
 					(size 1 1)
@@ -6858,6 +7216,26 @@
 		(uuid "08fb82fd-1739-4115-a039-5b2c6a71da03")
 	)
 	(gr_line
+		(start 152.5 107)
+		(end 127.5 57)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "78c0bae2-5f5a-401f-ae91-d3b26149962e")
+	)
+	(gr_line
+		(start 152.5 57)
+		(end 127.5 107)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "de7dfb11-750d-42b9-881c-e6657e1f8bba")
+	)
+	(gr_line
 		(start 149.5 107)
 		(end 130.5 107)
 		(stroke
@@ -9185,7 +9563,7 @@
 		)
 		(polygon
 			(pts
-				(xy 127 56.25) (xy 153 56.25) (xy 153 107.5) (xy 127 107.5)
+				(xy 127 56.5) (xy 153 56.5) (xy 153 107.5) (xy 127 107.5)
 			)
 		)
 		(filled_polygon
