@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "SolderbitSegment")(type "KiCad")(uri "${KIPRJMOD}/library/SolderbitSegment.pretty")(options "")(descr ""))
-  (lib (name "SolderbitGamepad")(type "KiCad")(uri "/Users/aroneggens/Developer/solderbit-gamepad/kicad/library/footprints/Solderbit_Gamepad.pretty")(options "")(descr ""))
-)
