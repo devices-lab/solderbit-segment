@@ -11,7 +11,7 @@
 
 # MakeCode extension
 
-The MakeCode extension for solder:bit Segment is available at [solderbit-segment-firmware](https://github.com/devices-lab/pxt-solderbit-segment).
+You can use the [solder:bit Segment MakeCode extension](https://github.com/devices-lab/pxt-solderbit-segment) to program the device in MakeCode.
 
 <div align="center">
   <img src="media/hwidx.png" width="100"/>
