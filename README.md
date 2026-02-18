@@ -13,3 +13,5 @@
   <img src="media/hwidx.png" width="100"/>
 </div>
 
+# MakeCode extension
+This lives in ![solderbit-segment-firmware](https://github.com/devices-lab/solderbit-segment-firmware). The firmware/ folder in this repo is a submodule of that.
