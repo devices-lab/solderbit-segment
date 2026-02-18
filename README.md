@@ -14,4 +14,6 @@
 </div>
 
 # MakeCode extension
-This lives in ![solderbit-segment-firmware](https://github.com/devices-lab/solderbit-segment-firmware). The firmware/ folder in this repo is a submodule of that.
+This lives in ![solderbit-segment-firmware](https://github.com/devices-lab/solderbit-segment-firmware). The firmware/ folder in this repo is a submodule of that. 
+
+This firmware repo is currently private so it can't be imported as a MakeCode extension. It will need to be made public to do so.
