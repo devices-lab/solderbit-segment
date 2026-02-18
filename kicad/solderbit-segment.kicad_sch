@@ -4975,7 +4975,7 @@
 				)
 			)
 		)
-		(property "Value" "ADMO10A0"
+		(property "Value" "VDMO10A0"
 			(at 180.34 34.036 0)
 			(effects
 				(font

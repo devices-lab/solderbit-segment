@@ -994,7 +994,7 @@
 				)
 			)
 		)
-		(property "Value" "ADMO10A0"
+		(property "Value" "VDMO10A0"
 			(at 0 -16.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2248,19 +2248,6 @@
 				)
 			)
 		)
-		(property "Onecall" "2776146"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "da3e31b3-51a5-4341-92b2-49444c495d49")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Onecall order code" "2776146"
 			(at 0 0 90)
 			(unlocked yes)
@@ -3138,19 +3125,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0879f38a-b791-4d53-9c37-d3b8e7b3cc27")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Onecall" "3124747"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f3f1747b-f780-48da-b0f2-7602306a6aca")
 			(effects
 				(font
 					(size 1 1)
@@ -4304,20 +4278,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Onecall" "CN14490"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "c667e316-5f10-41f3-b0db-d3e289ca240f")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
