@@ -1322,30 +1322,32 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SolderbitSegment:ADMR10A0"
+		(symbol "Solderbit_Segment:ADMR10A0"
 			(pin_names
 				(offset 0.635)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "DS1"
-				(at 0 17.78 0)
+			(property "Reference" "U"
+				(at -2.54 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
 			(property "Value" "ADMR10A0"
-				(at 0 15.24 0)
+				(at 3.556 -14.224 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" "SolderbitSegment:VDMR10"
+			(property "Footprint" "Display_7Segment:MAN71A"
 				(at -12.7 -17.78 0)
 				(effects
 					(font
@@ -1477,7 +1479,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -1490,7 +1491,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -1503,7 +1503,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -1516,7 +1515,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -1529,7 +1527,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -1542,7 +1539,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -1555,7 +1551,6 @@
 					(stroke
 						(width 0.508)
 						(type default)
-						(color 255 153 0 1)
 					)
 					(fill
 						(type none)
@@ -3782,7 +3777,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 59.69 0)
 			(effects
 				(font
@@ -3867,7 +3862,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 54.61 0)
 			(effects
 				(font
@@ -4150,7 +4145,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 46.99 0)
 			(effects
 				(font
@@ -4235,7 +4230,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 44.45 0)
 			(effects
 				(font
@@ -4320,7 +4315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 52.07 0)
 			(effects
 				(font
@@ -4407,7 +4402,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:C_1206"
+		(property "Footprint" "Solderbit_Segment:C_1206"
 			(at 111.76 71.12 0)
 			(effects
 				(font
@@ -4491,7 +4486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 49.53 0)
 			(effects
 				(font
@@ -4578,7 +4573,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:SO-16"
+		(property "Footprint" "Solderbit_Segment:SO-16"
 			(at 45.72 72.39 0)
 			(effects
 				(font
@@ -4706,7 +4701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:DIP-16"
+		(property "Footprint" "Solderbit_Segment:DIP-16"
 			(at 86.36 72.39 0)
 			(effects
 				(font
@@ -4898,7 +4893,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 41.91 0)
 			(effects
 				(font
@@ -4959,7 +4954,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SolderbitSegment:ADMR10A0")
+		(lib_id "Solderbit_Segment:ADMR10A0")
 		(at 180.34 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4983,7 +4978,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:VDMR10"
+		(property "Footprint" "Solderbit_Segment:VDMR10"
 			(at 167.64 67.31 0)
 			(effects
 				(font
@@ -5107,7 +5102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "Solderbit_Segment:PinHeader_1x05_P2.54mm_Vertical"
 			(at 180.34 109.22 0)
 			(effects
 				(font
@@ -5333,7 +5328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SolderbitSegment:R_1206"
+		(property "Footprint" "Solderbit_Segment:R_1206"
 			(at 163.83 39.37 0)
 			(effects
 				(font

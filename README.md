@@ -7,12 +7,34 @@
 
 | I/O expander in an SO-16 package (SMT)       | I/O expander in a DIP-16 package (THT)       |
 | -------------------------------------------- | -------------------------------------------- |
-| ![SMT](media/solderbit-segment-v0.1-SMT.png) | ![THT](media/solderbit-segment-v0.1-THT.png) |
+| ![SMT](media/v0.1/solderbit-segment-v0.1-SMT.png) | ![THT](media/v0.1/solderbit-segment-v0.1-THT.png) |
 
-# MakeCode extension
 
-You can use the [solder:bit Segment MakeCode extension](https://github.com/devices-lab/pxt-solderbit-segment) to program the device in MakeCode.
+
+
+
+## Programming
+
+You can program the solder:bit Segment in [MakeCode](https://makecode.microbit.org/) using the [pxt-solderbit-segment](https://github.com/devices-lab/pxt-solderbit-segment) extension.
+
+You can test if your assembled device works by flashing the micro:bit with the [demo file](/demo/microbit-solderbit-segment-demo.hex). Attach the micro:bit to a breadboard with an [adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19 (see this [image](/demo/wiring_front.jpeg)).
+
+## Project status
+
+This project is actively maintained. See [CHANGELOG.md](/CHANGELOG.md) for the latest changes.
+
+## Credits
+
+Special thanks to everyone at the Lancaster University [Devices Lab](https://www.devices-lab.org/).
+
+## License
+
+This project is licensed under the GNU General Public License (GPL), version 3. This license allows you to use, modify, and redistribute the solder:bit Segment and any derivative works, but all such derivatives must also be licensed under the GPL.
+
+The GPL ensures that all modifications and improvements to the solder:bit Segment remain free and open for the public benefit. By using this project, you agree to abide by its terms and conditions.
+
+For more details on the license, please see the [LICENSE](/LICENSE) file included in this repository.
 
 <div align="center">
-  <img src="media/hwidx.png" width="100"/>
+  <img src="media/v0.1/hwidx.png" width="100"/>
 </div>
