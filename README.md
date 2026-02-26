@@ -11,14 +11,14 @@ The PCB is the same for both, and you simply choose which component to solder ba
 <!-- ![SMT](media/v0.1/solderbit-segment-v0.1-SMT.png) I/O expander in an SO-16 package (SMT)
 ![THT](media/v0.1/solderbit-segment-v0.1-THT.png) I/O expander in a DIP-16 package (THT)     -->
 
-<table>
+<table border="0">
   <tr>
     <td align="center">
-      <img src="media/v0.1/SO-16.png" alt="SMT"><br>
+      <img src="media/v0.1/solderbit-segment-v0.1-SMT.png" alt="SMT"><br>
       I/O expander in an SO-16 package (SMT)
     </td>
     <td align="center">
-      <img src="media/v0.1/DIP-16.png" alt="THT"><br>
+      <img src="media/v0.1/solderbit-segment-v0.1-THT.png" alt="THT"><br>
       I/O expander in a DIP-16 package (THT)
     </td>
   </tr>
@@ -38,7 +38,7 @@ To get started, you will need the following:
 
 ### Printed circuit boards (PCBs)
 
-The solder:bit Gamepad fabrication files are open source, so you can order the PCBs yourself!
+The solder:bit Segment fabrication files are open source, so you can order the PCBs yourself!
 
 To fabricate the PCB, use the files in the [gerbers-v0.1](/fabrication/gerbers-v0.1/) folder.
 
@@ -49,7 +49,7 @@ To fabricate the PCB, use the files in the [gerbers-v0.1](/fabrication/gerbers-v
 
 | Reference | Quantity | Part            | Package     | Onecall order code |
 | --------- | -------- | --------------- | ----------- | ------------------ |
-| C1        | 1        | 1 µF            | 1206        | 3188966            |
+| C1        | 1        | 1 µF \*         | 1206        | 3188966            |
 | DS1       | 1        | VDMO10A0        | SMD, 10mm   | 2682705            |
 | J1        | 1        | 5-pin header \* | 2.54mm, THT | 3049532            |
 | R1–R8     | 8        | 150 Ω \*        | 1206        | 9240420            |
@@ -113,7 +113,7 @@ If you are using a BBC micro:bit, you can program the solder:bit Segment in [Mak
 
 You can test if your assembled device works by flashing the micro:bit with the [demo file](/demo/microbit-solderbit-segment-demo.hex). Attach the solder:bit Segment to a breadboard, plug the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and connect it to the breadboard. Wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19. See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example of how to wire it up.
 
-For any other development board, you will need to write the firmware yourself. Refer to the [solder:bit Segment schematic](/reference/solderbit%20Gamepad%20v0.1%20schematic.pdf), the datasheets for the I/O expanders (both packages), and the 7-segment display datasheet, all of which are available in the [reference](/reference/) folder.
+For any other development board, you will need to write the firmware yourself. Refer to the [solder:bit Segment schematic](/reference/solderbit%20Segment%20v0.1%20schematic.pdf), the datasheets for the I/O expanders (both packages), and the 7-segment display datasheet, all of which are available in the [reference](/reference/) folder.
 
 > [!WARNING]
 > The two I/O expander packages have different I²C addresses. With the current PCB layout and configuration, the PCF8574AT (SO-16 package) has an I²C address of `0x38`, while the PCF8574N (DIP-16 package) has an address of `0x20`. When writing your own firmware, make sure you are using the correct address for the package you have soldered. The [pxt-solderbit-segment](https://github.com/devices-lab/pxt-solderbit-segment) MakeCode extension handles this for you.
@@ -134,12 +134,12 @@ Special thanks to everyone at the [Devices Lab](https://www.devices-lab.org/) fo
 
 ## License
 
-This project is licensed under the GNU General Public License (GPL), version 3. This license allows you to use, modify, and redistribute the solder:bit Gamepad and any derivative works, but all such derivatives must also be licensed under the GPL.
+This project is licensed under the GNU General Public License (GPL), version 3. This license allows you to use, modify, and redistribute the solder:bit Segment and any derivative works, but all such derivatives must also be licensed under the GPL.
 
-The GPL ensures that all modifications and improvements to the solder:bit Gamepad remain free and open for the public benefit. By using this project, you agree to abide by its terms and conditions.
+The GPL ensures that all modifications and improvements to the solder:bit Segment remain free and open for the public benefit. By using this project, you agree to abide by its terms and conditions.
 
 For more details on the license, please see the [LICENSE](/LICENSE) file included in this repository.
 
 <div align="center">
-  <img src="media/v0.8/hwidx.png" width="100"/>
+  <img src="media/v0.1/hwidx.png" width="100"/>
 </div>
