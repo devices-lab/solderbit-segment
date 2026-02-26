@@ -4,7 +4,7 @@
 
 The solder:bit Segment is a kit for learning to solder with surface-mount (SMT) components. When assembled, the device can display a single digit on a 7-segment display. It works with any microcontroller that communicates over the [I²C protocol](https://en.wikipedia.org/wiki/I2C).
 
-This soldering kit is designed to accommodate a wide range of soldering abilities. The I/O expander is available in two different packages. The PCF8574AT in the **SO-16** package is smaller and more challenging to solder, while the PCF8574N in the **DIP-16** package is larger and through-hole (THT), making it more accessible for novices. The same PCB has footprints for both packages, and you simply choose which component to solder based on your ability. The device functions identically regardless of which package you use. Note that once you have soldered one package, the footprint for the other will no longer be accessible.
+This soldering kit is designed to accommodate a wide range of soldering abilities. The I/O expander is available in two different packages. The PCF8574AT in the **SO-16** package is smaller and more challenging to solder, while the PCF8574N in the **DIP-16** package is larger and through-hole (THT), making it more accessible for novices. The same printed circuit board (PCB) has footprints for both packages, and you choose which component to solder based on your ability. The device functions identically regardless of which package you use. Note that once you have soldered one package, the footprint for the other will no longer be accessible.
 
 | I/O expander in an SO-16 package (SMT) | I/O expander in a DIP-16 package (THT) |
 | -------------------------------------- | -------------------------------------- |
@@ -44,7 +44,9 @@ To fabricate the PCB, use the files in the [gerbers-v0.1](/fabrication/gerbers-v
 
 _\* Generic component; the order code is provided as a reference, but any equivalent component in the same package can be substituted._
 
-Note that U1 and U2 are alternative packages for the same component — you only need one. You can source both and choose whichever you are more comfortable soldering.
+Note that U1 and U2 are alternative packages for the same PCF8574 component — you only need one. You can source both and choose whichever you are more comfortable soldering.
+
+The 7-segment display listed above has orange segments. If you would like other colours, Vishay also offers VDMR10A0 (red) and VDMG10A0 (green). Note that you might need to adjust R1-R8 resistor values to ensure the sinking current doesn't exceed 10 mA on each GPIO pin. 
 
 Depending on how you plan to connect the solder:bit Segment to your microcontroller development board, you may also need a breadboard and some jumper cables.
 
