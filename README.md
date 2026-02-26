@@ -8,21 +8,9 @@ This soldering kit is designed to accommodate a wide range of soldering abilitie
 
 The PCB is the same for both, and you simply choose which component to solder based on your ability. The device functions identically regardless of which package you use. Note that once you have soldered one package, the footprint for the other will no longer be accessible.
 
-<!-- ![SMT](media/v0.1/solderbit-segment-v0.1-SMT.png) I/O expander in an SO-16 package (SMT)
-![THT](media/v0.1/solderbit-segment-v0.1-THT.png) I/O expander in a DIP-16 package (THT)     -->
-
-<table border="0">
-  <tr>
-    <td align="center">
-      <img src="media/v0.1/solderbit-segment-v0.1-SMT.png" alt="SMT"><br>
-      I/O expander in an SO-16 package (SMT)
-    </td>
-    <td align="center">
-      <img src="media/v0.1/solderbit-segment-v0.1-THT.png" alt="THT"><br>
-      I/O expander in a DIP-16 package (THT)
-    </td>
-  </tr>
-</table>
+| I/O expander in an SO-16 package (SMT) | I/O expander in a DIP-16 package (THT) |
+| -------------------------------------- | -------------------------------------- |
+| ![SMT](media/v0.1/SO-16.png)           | ![THT](media/v0.1/DIP-16.png)          |
 
 ## Getting started
 
