@@ -128,6 +128,4 @@ The GPL ensures that all modifications and improvements to the solder:bit Segmen
 
 For more details on the license, please see the [LICENSE](/LICENSE) file included in this repository.
 
-<div align="center">
-  <img src="media/v0.1/hwidx.png" width="100"/>
-</div>
+![Back of the solder:bit Segment](./media/v0.1/back.png "A render of the back of the latest solder:bit Segment")
