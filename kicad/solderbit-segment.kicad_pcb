@@ -2379,7 +2379,7 @@
 		(path "/94da4c80-1993-47f0-89c9-89ac8ab9e9c3")
 		(sheetname "/")
 		(sheetfile "solderbit-segment.kicad_sch")
-		(attr smd dnp)
+		(attr smd)
 		(fp_line
 			(start 3.1 -5.21)
 			(end 3.1 -5.005)
@@ -2757,6 +2757,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/library/Solderbit_Segment.3dshapes/PCF8574AT_3,518.stp"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3301,7 +3302,7 @@
 		(path "/adc40a97-1c5f-4504-9dab-b4f0471bb07b")
 		(sheetname "/")
 		(sheetfile "solderbit-segment.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 6.06 -1.33)
 			(end 4.81 -1.33)
@@ -3614,7 +3615,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-16_W7.62mm.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
