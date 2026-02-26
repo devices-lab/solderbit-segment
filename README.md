@@ -2,11 +2,9 @@
 
 ![solder:bit Segment](./media/v0.1/main.png "A render of the latest solder:bit Segment")
 
-The solder:bit Segment is a kit for learning to solder with surface-mount (SMT) components. When assembled, the device functions as a display capable of displaying a single digit. It is compatible with any microcontroller that communicates over the [I²C protocol](https://en.wikipedia.org/wiki/I2C).
+The solder:bit Segment is a kit for learning to solder with surface-mount (SMT) components. When assembled, the device can display a single digit on a 7-segment display. It works with any microcontroller that communicates over the [I²C protocol](https://en.wikipedia.org/wiki/I2C).
 
-This soldering kit is designed to accommodate a wide range of soldering abilities, from complete novices to more experienced solderers. To support this, the I/O expander is available in two different packages. The PCF8574AT in the **SO-16** package is smaller and more challenging to solder, while the PCF8574N in the **DIP-16** package is larger and through-hole (THT), making it more accessible for novices.
-
-The PCB is the same for both, and you simply choose which component to solder based on your ability. The device functions identically regardless of which package you use. Note that once you have soldered one package, the footprint for the other will no longer be accessible.
+This soldering kit is designed to accommodate a wide range of soldering abilities. The I/O expander is available in two different packages. The PCF8574AT in the **SO-16** package is smaller and more challenging to solder, while the PCF8574N in the **DIP-16** package is larger and through-hole (THT), making it more accessible for novices. The same PCB has footprints for both packages, and you simply choose which component to solder based on your ability. The device functions identically regardless of which package you use. Note that once you have soldered one package, the footprint for the other will no longer be accessible.
 
 | I/O expander in an SO-16 package (SMT) | I/O expander in a DIP-16 package (THT) |
 | -------------------------------------- | -------------------------------------- |
@@ -54,7 +52,10 @@ Depending on how you plan to connect the solder:bit Segment to your microcontrol
 
 You can use a BBC micro:bit to control the solder:bit Segment. Once assembled, attach the solder:bit Segment to a breadboard, plug the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and connect it to the breadboard. Wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19. See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example of how to wire it up.
 
-The solder:bit Segment can also be used with other microcontroller development boards such as the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) or [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3), however wer currently only provide programming support for the BBC micro:bit.
+> [!CAUTION]
+> The device works at a supply voltage (VDD) from 2.5V to 6V.
+
+The solder:bit Segment can also be used with other microcontroller development boards such as the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) or [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3), however we currently only provide programming support for the micro:bit.
 
 See the [programming](#programming) section below for how to write code to control the solder:bit Segment.
 
@@ -99,7 +100,7 @@ Coming soon...
 
 If you are using a BBC micro:bit, you can program the solder:bit Segment in [MakeCode](https://makecode.microbit.org/) using the [pxt-solderbit-segment](https://github.com/devices-lab/pxt-solderbit-segment) extension.
 
-You can test if your assembled device works by flashing the micro:bit with the [demo file](/demo/microbit-solderbit-segment-demo.hex). Attach the solder:bit Segment to a breadboard, plug the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and connect it to the breadboard. Wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19. See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example of how to wire it up.
+You can test if your assembled device works by flashing the micro:bit with the [demo file](/demo/microbit-solderbit-segment-demo.hex). Attach the solder:bit Segment to a breadboard, insert the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and plug it into the breadboard. With jumper cables, wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19. See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example.
 
 For any other development board, you will need to write the firmware yourself. Refer to the [solder:bit Segment schematic](/reference/solderbit%20Segment%20v0.1%20schematic.pdf), the datasheets for the I/O expanders (both packages), and the 7-segment display datasheet, all of which are available in the [reference](/reference/) folder.
 
