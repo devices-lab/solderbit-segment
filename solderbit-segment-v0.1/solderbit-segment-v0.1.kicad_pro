@@ -464,7 +464,8 @@
   "libraries": {
     "pinned_footprint_libs": [
       "SolderbitSegment",
-      "SolderbitGamepad"
+      "SolderbitGamepad",
+      "Solderbit_Segment"
     ],
     "pinned_symbol_libs": []
   },

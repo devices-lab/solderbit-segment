@@ -380,7 +380,7 @@
 		(uuid "4717f81f-6b44-49e1-b121-4c9a1c29708c")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/library/SolderbitSegment.3dshapes/PCF8574AT_3,518.stp"
+	(model "${KIPRJMOD}/library/Solderbit_Segment.3dshapes/PCF8574AT_3,518.stp"
 		(offset
 			(xyz 0 0 0)
 		)

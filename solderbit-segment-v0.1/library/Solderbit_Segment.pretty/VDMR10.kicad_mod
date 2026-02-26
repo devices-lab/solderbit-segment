@@ -444,7 +444,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/library/SolderbitSegment.3dshapes/VDMR10A0.stp"
+	(model "${KIPRJMOD}/library/Solderbit_Segment.3dshapes/VDMR10A0.stp"
 		(offset
 			(xyz 0 0 0)
 		)

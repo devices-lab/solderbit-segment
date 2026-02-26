@@ -464,7 +464,8 @@
   "libraries": {
     "pinned_footprint_libs": [
       "SolderbitSegment",
-      "SolderbitGamepad"
+      "SolderbitGamepad",
+      "Solderbit_Segment"
     ],
     "pinned_symbol_libs": []
   },
@@ -602,10 +603,16 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
         }
       ],
       "filter_string": "",
-      "group_symbols": false,
+      "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
