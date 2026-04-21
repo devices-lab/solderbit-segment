@@ -50,7 +50,7 @@ The 7-segment display listed above has orange segments. If you would like other 
 
 Depending on how you plan to connect the solder:bit Segment to your microcontroller development board, you may also need a breadboard and some jumper cables.
 
-## Development board
+### Development board
 
 You can use a BBC micro:bit to control the solder:bit Segment. Once assembled, attach the device to a breadboard, plug the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and connect it to the breadboard. See the [programming](#programming) section below to see how to wire it up.
 
