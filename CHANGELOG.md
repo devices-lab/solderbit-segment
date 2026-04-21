@@ -9,6 +9,8 @@ For this version, the plan is to implement the following:
 1. Add J1 designator on the silkscreen for the header pins
 2. Make the QR code on the back smaller, and consider the new format more in line with Devices Lab
 3. Route the address pins on the I/O expanders so that both packages end up with the same I2C address.
+4. Update the name of the footprint + name of the package to the correct name: Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+5. Update other symbols to match the new ones in the solder:bit Segment Shift Edition
 
 ## v0.1
 

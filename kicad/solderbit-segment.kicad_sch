@@ -5,7 +5,7 @@
 	(uuid "0a65ca5c-5a18-4c77-a1e9-75f41129374f")
 	(paper "A4")
 	(title_block
-		(title "solder:bit Segment")
+		(title "${PROJECTNAME}")
 		(date "2026-02-16")
 		(rev "v0.1")
 		(company "Devices Lab")
@@ -4664,23 +4664,14 @@
 			)
 		)
 		(property "Package" "SO-16"
-			(at 50.8 58.928 0)
+			(at 51.054 58.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Onecall order code" "2776146"
-			(at 45.72 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
+		(property "Onecall" "2776146"
 			(at 45.72 72.39 0)
 			(effects
 				(font
@@ -4808,16 +4799,7 @@
 				)
 			)
 		)
-		(property "Onecall order code" "3124747"
-			(at 86.36 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
+		(property "Onecall" "3124747"
 			(at 86.36 72.39 0)
 			(effects
 				(font
@@ -5097,7 +5079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "10mm,SMD"
+		(property "Package" "SMD"
 			(at 180.34 34.544 0)
 			(effects
 				(font
@@ -5106,7 +5088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Onecall order code" "2682705"
+		(property "Onecall" "2682705"
 			(at 180.34 49.53 0)
 			(effects
 				(font
@@ -5115,7 +5097,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C2913076"
+			(at 180.34 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Extended"
+			(at 180.34 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC datasheet" "https://www.lcsc.com/datasheet/C2913076.pdf"
 			(at 180.34 49.53 0)
 			(effects
 				(font
@@ -5238,15 +5238,6 @@
 			)
 		)
 		(property "Onecall order code" "3049532"
-			(at 180.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
 			(at 180.34 109.22 0)
 			(effects
 				(font

@@ -46,16 +46,16 @@ _\* Generic component; the order code is provided as a reference, but any equiva
 
 Note that U1 and U2 are alternative packages for the same PCF8574 component — you only need one. You can source both and choose whichever you are more comfortable soldering.
 
-The 7-segment display listed above has orange segments. If you would like other colours, Vishay also offers VDMR10A0 (red) and VDMG10A0 (green). Note that you might need to adjust R1-R8 resistor values to ensure the sinking current doesn't exceed 10 mA on each GPIO pin. 
+The 7-segment display listed above has orange segments. If you would like other colours, Vishay also offers VDMR10A0 (red) and VDMG10A0 (green). Note that you might need to adjust R1-R8 resistor values to ensure the sinking current doesn't exceed 10 mA on each GPIO pin.
 
 Depending on how you plan to connect the solder:bit Segment to your microcontroller development board, you may also need a breadboard and some jumper cables.
 
 ## Development board
 
-You can use a BBC micro:bit to control the solder:bit Segment. Once assembled, attach the solder:bit Segment to a breadboard, plug the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and connect it to the breadboard. Wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19. See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example of how to wire it up.
+You can use a BBC micro:bit to control the solder:bit Segment. Once assembled, attach the device to a breadboard, plug the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and connect it to the breadboard. See the [programming](#programming) section below to see how to wire it up.
 
 > [!CAUTION]
-> The device works at a supply voltage (VDD) from 2.5V to 6V.
+> The device works at a supply voltage (VDD) from 2.5 V to 6 V.
 
 The solder:bit Segment can also be used with other microcontroller development boards such as the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) or [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3), however we currently only provide programming support for the micro:bit.
 
@@ -102,7 +102,16 @@ Coming soon...
 
 If you are using a BBC micro:bit, you can program the solder:bit Segment in [MakeCode](https://makecode.microbit.org/) using the [pxt-solderbit-segment](https://github.com/devices-lab/pxt-solderbit-segment) extension.
 
-You can test if your assembled device works by flashing the micro:bit with the [demo file](/demo/microbit-solderbit-segment-demo.hex). Attach the solder:bit Segment to a breadboard, insert the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and plug it into the breadboard. With jumper cables, wire up GND to GND, VDD to 3V, SDA to P20, and SCL to P19. See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example.
+You can test if your assembled device works by flashing the micro:bit with the [demo file](/demo/microbit-solderbit-segment-demo.hex). Attach the solder:bit Segment to a breadboard, insert the micro:bit into a [breadboard adaptor](https://kitronik.co.uk/products/5664-microbit-breadboard-breakout-board), and plug it into the breadboard. Connect the device to the micro:bit using the following pinout:
+
+| solder:bit Segment | BBC micro:bit |
+| ------------------ | ------------- |
+| GND                | GND           |
+| VDD                | 3V            |
+| SDA                | P20           |
+| SCL                | P19           |
+
+See [this image](/demo/wiring_front.jpeg) and [this image](/demo/wiring_back.jpeg) for an example of how to wire it up.
 
 For any other development board, you will need to write the firmware yourself. Refer to the [solder:bit Segment schematic](/reference/solderbit%20Segment%20v0.1%20schematic.pdf), the datasheets for the I/O expanders (both packages), and the 7-segment display datasheet, all of which are available in the [reference](/reference/) folder.
 
@@ -117,7 +126,7 @@ At this time, external contributions are not being accepted. If you have suggest
 
 ## Contact
 
-If you are interested in using solder:bit kits for your classroom, university, conference, or any other workshop or event, feel free to reach out to me @mac-aron or email Devices Lab at [device-lab@lancaster.ac.uk](mailto:device-lab@lancaster.ac.uk).
+If you are interested in using solder:bit kits for your classroom, university, conference, or any other workshop or event, feel free to reach out to me @mac-aron or contact [Devices Lab](https://devices-lab.org/contact).
 
 ## Acknowledgements
 

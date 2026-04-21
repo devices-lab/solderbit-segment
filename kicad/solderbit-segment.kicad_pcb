@@ -8,13 +8,13 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "solder:bit Segment")
+		(title "${PROJECTNAME}")
 		(date "2026-02-16")
 		(rev "v0.1")
 		(company "Devices Lab")
 		(comment 1 "Lancaster University")
 		(comment 2 "Aron Eggens")
-		(comment 3 "solder:bit Gamepad")
+		(comment 3 "solder:bit Segment")
 	)
 	(layers
 		(0 "F.Cu" signal)
